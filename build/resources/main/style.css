@@ -1,0 +1,17 @@
+.gap {
+    position: relative;
+    width: 5px;
+    min-height: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.btnborder {
+    border: 1px solid black;
+}
+p {
+    font-weight: bold;
+}
+.testStyle {
+    font-weight: bold;
+    color: red;
+}

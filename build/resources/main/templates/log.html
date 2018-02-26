@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Server Calculator v2 (log)</title>
+        <link rel="stylesheet" th:href="@{/bootstrap.css}"/>
+        <link rel="stylesheet" th:href="@{/style.css}"/>
+        <script type="text/javascript" th:src="@{/jquery.js}"></script>
+        <script type="text/javascript" th:src="@{/client.js}"></script>
+        <script type="text/javascript" th:src="@{/thelog.js}"></script>
+    </head>
+    <body>
+        <div id="historyPage" class="container">
+            <div class="row">
+                <button onclick="goHome()" class="btn btn-info">Return to Calculator</button>
+            </div>
+            <div>
+                <p></p>
+            </div>
+            <div class="row" th:each="entry : ${calcHistory}">
+                <div class="col-md-12">
+                    <p th:text="${entry.num1}+' '+${entry.opr}+' '+${entry.num2}+' = '+${entry.solution}" class="solution"></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Server Calculator v2</title>
+    <link rel="stylesheet" th:href="@{/bootstrap.css}"/>
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+    <script type="text/javascript" th:src="@{/jquery.js}"></script>
+    <script type="text/javascript" th:src="@{/client.js}"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row col-md-12 btn"></div>
+        <div class="row">
+            <div data-num="1" id="num1" class="col-md-1 btn btn-info btnborder">
+                <p>1</p>
+            </div>
+            <div data-num="2" id="num2" class="col-md-1 btn btn-info btnborder">
+                <p>2</p>
+            </div>
+            <div data-num="3" id="num3" class="col-md-1 btn btn-info btnborder">
+                <p>3</p>
+            </div>
+            <div class="gap"></div>
+            <div data-opr="add" id="oprAdd" class="col-md-1 btn btn-info btnborder">
+                <p>+</p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div data-num="4" id="num4" class="col-md-1 btn btn-info btnborder">
+                <p>4</p>
+            </div>
+            <div data-num="5" id="num5" class="col-md-1 btn btn-info btnborder">
+                <p>5</p>
+            </div>
+            <div data-num="6" id="num6" class="col-md-1 btn btn-info btnborder">
+                <p>6</p>
+            </div>
+            <div class="gap"></div>
+            <div data-opr="sub" id="oprSub" class="col-md-1 btn btn-info btnborder">
+                <p>-</p>
+            </div>
+        </div>
+        <div class="row">
+            <div data-num="7" id="num7" class="col-md-1 btn btn-info btnborder">
+                <p>7</p>
+            </div>
+            <div data-num="8" id="num8" class="col-md-1 btn btn-info btnborder">
+                <p>8</p>
+            </div>
+            <div data-num="9" id="num9" class="col-md-1 btn btn-info btnborder">
+                <p>9</p>
+            </div>
+            <div class="gap"></div>
+            <div data-opr="mult" id="oprMult" class="col-md-1 btn btn-info btnborder">
+                <p>*</p>
+            </div>
+        </div>
+        <div class="row">
+            <div data-num="0" id="num0" class="col-md-1 btn btn-info btnborder">
+                <p>0</p>
+            </div>
+            <div data-opr="=" id="opr=" class="col-md-2 btn btn-info btnborder">
+                <p>=</p>
+            </div>
+            <div class="gap"></div>
+            <div data-opr="div" id="oprDiv" class="col-md-1 btn btn-info btnborder">
+                <p>/</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div onclick="goLog()" class="col-md-2 btn btn-info btnborder">
+                <p>Go to Log</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
